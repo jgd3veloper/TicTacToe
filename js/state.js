@@ -30,7 +30,7 @@ function MenuState(name) {
 		ctx.save();
 		ctx.translate(190, 40);
 		ctx.rotate(angle);
-		ctx.font = "45px Philosopher";
+		ctx.font = "45px Pacifico";
 		ctx.fillStyle = "#27aae1";
 		var txt = "Tic Tac Toe";
 		ctx.fillText(txt, -ctx.measureText(txt).width/2, 18);
@@ -40,7 +40,7 @@ function MenuState(name) {
 			btns[i].draw(ctx);
 		}
 
-		if (_ctx) { 
+		if (_ctx) {
 			scene.draw(_ctx);
 		} else {
 			return scene.getCanvas();
@@ -169,7 +169,7 @@ function GameState(name) {
 			ctx.fillStyle = "#fff";
 			ctx.strokeStyle = "#8AACB8";
 			ctx.lineWidth = lw;
-			ctx.font = "25px Philosopher";
+			ctx.font = "25px Pacifico";
 
 			ctx.beginPath();
 			ctx.arc(s, s, s, Math.PI, 1.5*Math.PI);
@@ -188,7 +188,7 @@ function GameState(name) {
 			ctx.restore();
 		}
 
-		if (_ctx) { 
+		if (_ctx) {
 			scene.draw(_ctx);
 		} else {
 			return scene.getCanvas();
@@ -211,10 +211,10 @@ function AboutState(name) {
 		}
 		hastick = false;
 	}, false);
-	
+
 	(function() {
 		//About Page Background
-		ctx.font = "20px Philosopher";
+		ctx.font = "20px Pacifico";
 		ctx.fillStyle = "#27aae1";
 
 		ctx.translate(20, 20);
@@ -254,7 +254,7 @@ function AboutState(name) {
 			}
 		}
 		ctx.fillText(line, x, y);
-	})();	
+	})();
 
 
 	this.update = function() {
@@ -263,7 +263,7 @@ function AboutState(name) {
 
 	this.render = function(_ctx) {
 
-		if (_ctx) { 
+		if (_ctx) {
 			scene.draw(_ctx);
 		} else {
 			return scene.getCanvas();
